@@ -4,7 +4,7 @@ import "./style.css";
 
 
 const Temp = () => {
-  const apikey = "f02e030b79e4220317cced3e536d0cf9";
+  const apikey = process.env.REACT_APP_WEATHER_API;
   const [searchValue, setSearchValue] = useState("allahabad");
   const [tempInfo, setTempInfo] = useState({});
 
